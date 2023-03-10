@@ -1,0 +1,7 @@
+D:\StudentMarks\bin\Debug\StudentMarks.exe.config
+D:\StudentMarks\bin\Debug\StudentMarks.exe
+D:\StudentMarks\bin\Debug\StudentMarks.pdb
+D:\StudentMarks\obj\Debug\StudentMarks.csprojAssemblyReference.cache
+D:\StudentMarks\obj\Debug\StudentMarks.csproj.CoreCompileInputs.cache
+D:\StudentMarks\obj\Debug\StudentMarks.exe
+D:\StudentMarks\obj\Debug\StudentMarks.pdb
