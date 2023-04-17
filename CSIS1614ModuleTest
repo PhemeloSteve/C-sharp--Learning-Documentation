@@ -1,0 +1,113 @@
+// Student Number   : 2023129683
+// Name             : Mokwena Phemelo
+// Module code      : CSIS1614
+// Date             : 13 April 2023
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ModuleTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Section C
+            // Question 1
+
+            // Declaring Variables for Fisrt Name, Last name and Integer
+
+            char cChar;
+            int iNum;   // iNum = 36 for dollar sign
+            string sName, sSurname;
+
+            // Taking user input name,surname, displaying message and take user input integer
+
+            Console.WriteLine("Enter your First name.");
+            sName = Console.ReadLine();
+
+            Console.WriteLine("Enter your Last name.");
+            sSurname = Console.ReadLine();
+
+            Console.WriteLine("Welcome " + sName + " " + sSurname +", enter an Integer to convert to a character");
+            iNum = int.Parse(Console.ReadLine());   
+
+            // Converting int to Character and  Displaying message with the character converted from input integer
+
+            cChar = (char)iNum;
+
+            Console.WriteLine("Your Character is:" + cChar);
+            
+            // Question 2
+
+            // Decleration for variables Bonus, Salary amount and number of days worked aswell as character for Dollar sign
+
+            int iSign = 36;
+            char cDollar = (char)iSign;
+            const double dBonus = 50.50;
+            double dSalary;
+            int iDays;
+            int iMonths;
+            double dRemuneration;
+
+            // Taking user input montly salary and number of worked days
+
+            Console.Write("\nEnter the employee's monthly salary (" + cDollar +"): ");
+            dSalary = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the number of days that the employee worked: ");
+            iDays = int.Parse(Console.ReadLine());
+
+            // Calculations For Total remuneration amount
+
+            iMonths = iDays / 20;   // Months Worked
+            iDays %= 20;    // Extra days
+            dRemuneration = iMonths*dSalary + (double)iDays * dBonus;
+
+            // Displaying message for the employees remuneration amount
+
+            Console.WriteLine("\nThe employee's total remuneration is " + cDollar + dRemuneration.ToString("0.00"));
+
+            // Question 3
+
+            // Declaring deduction variables percentages and tax deduction
+
+            double dLow = 10.10 / 100.00;
+            double dMedium = 15.25 / 100.00;
+            double dHigh = 17.5 / 100.00;
+            double dDeduction;
+
+            // Using if else statement and logic operation to determine users deduction amount
+
+            // For Low tax bracket
+            if (dSalary < 3500)
+            {
+                dDeduction = dSalary * dLow;
+                Console.WriteLine("\n(L)Your tax deductions this month are: " + cDollar + dDeduction.ToString("0.00"));
+            }
+
+            // For Medium tax bracket
+            else if (dSalary>= 3500 && dSalary<5000)
+            {
+                dDeduction = dSalary * dMedium;
+                Console.WriteLine("\n(M)Your tax deductions this month are: " + cDollar + dDeduction.ToString("0.00"));
+            }
+
+            // For High tax bracket
+            else
+            {
+                dDeduction = dSalary * dHigh;
+                Console.WriteLine("\n(H)Your tax deductions this month are: " + cDollar + dDeduction.ToString("0.0"));
+            }
+
+            //End of a code
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+
+        }
+    }
+}
