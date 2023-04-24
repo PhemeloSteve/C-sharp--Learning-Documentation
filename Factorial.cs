@@ -26,6 +26,9 @@ public class Program
         {
             Console.WriteLine("The number "+n+" has a factorial of "+Fact(n));
         }
+        
+        Console.WriteLine("Press any key to exit");
+        Console.ReadKey();
     }
     public static int Fact(int n)
     {
