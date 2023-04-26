@@ -8,7 +8,8 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Your avarge is: " + Avarage().ToString("0.00"));
+        double dAvarage = Avarage();
+        GenerateMsg(dAvarage);
 
     }
 
@@ -24,4 +25,12 @@ public class Program
 
         return avarage;
     }
+
+
+
+    static void GenerateMsg(double _dAvarage)
+    {
+       Console.WriteLine("Your avarge is: " + _dAvarage.ToString("0.00"));
+    }
+
 }
