@@ -1,0 +1,7 @@
+T:\TestCodes\Factorial\bin\Debug\Factorial.exe.config
+T:\TestCodes\Factorial\bin\Debug\Factorial.exe
+T:\TestCodes\Factorial\bin\Debug\Factorial.pdb
+T:\TestCodes\Factorial\obj\Debug\Factorial.csprojAssemblyReference.cache
+T:\TestCodes\Factorial\obj\Debug\Factorial.csproj.CoreCompileInputs.cache
+T:\TestCodes\Factorial\obj\Debug\Factorial.exe
+T:\TestCodes\Factorial\obj\Debug\Factorial.pdb
